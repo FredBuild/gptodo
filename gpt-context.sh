@@ -8,12 +8,16 @@ TARGET_FILE="gpt-context.txt"
 > "$TARGET_FILE"
 
 # Add file structures
-echo "\n## File structures\n" >> "$TARGET_FILE"
+echo "## File structures\n" >> "$TARGET_FILE"
 exa --tree --level 3 --git-ignore >> "$TARGET_FILE"
 
 # Add package.json content
 echo "\n## package.json\n" >> "$TARGET_FILE"
 cat package.json >> "$TARGET_FILE"
+
+# Add tsconfig.json content
+echo "\n## tsconfig.json\n" >> "$TARGET_FILE"
+cat tsconfig.json >> "$TARGET_FILE"
 
 # Generate TypeScript definitions
 npx tsc --project tsconfig.gen.json
