@@ -34,3 +34,7 @@ yarn-error.log*
 
 .contentlayer
 .env
+
+*.tsbuildinfo
+gen-types/
+gpt-context.txt

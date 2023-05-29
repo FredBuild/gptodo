@@ -1,22 +1,19 @@
-# next-template
+# GPTodo
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+[![Origin Tweet](https://tweeco.pushkaryadav.in/api/id/1663085476830674944)](https://twitter.com/FredBuild/status/1663085476830674944)
 
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/shadcn/next-template
+# install dependencies
+$ pnpm i
+
+# generate gpt-context.txt
+$ sh gpt-context.sh
 ```
 
-## Features
-
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
+Run the script, and you will get a `gpt-content.txt` file, put it into ChatGPT as a part of your prompt.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+Licensed under the MIT license.
